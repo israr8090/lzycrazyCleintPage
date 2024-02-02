@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --font-Roboto: 'Roboto', sans-serif;
+    --font-Open: 'Open Sans', sans-serif;
+    --patent-color: #120748;
+    --white-color: #ffffff;
+}
+
+/* --------right side main section------- */
+.deshboard-main {
+    /* background-color: aqua; */
+    background-color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 2px rgb(224, 218, 218);
+    padding: 20px 30px;
+}
+
+.deshboard-main h1 {
+    /* background-color: rgb(173, 231, 141); */
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    color: #120748;
+
+}
+
+.deshbord-overview-icon-size-color {
+    color: var(--patent-color);
+    font-size: 30px;
+}
+
+/* ==================================================================== */
+.user-state-city-section {
+    background-color: rgb(246, 255, 255);
+    box-shadow: 0px 0px 3px 2px rgb(224, 218, 218);
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.state-user {
+    /* background-color: rgb(255, 106, 0); */
+    width: 48%;
+}
+
+.state-user label {
+    /* background-color: rgb(255, 106, 0); */
+    font-size: 18px;
+}
+
+.state-user select {
+    /* background-color: rgb(0, 255, 136); */
+    font-size: 16px;
+    padding: 6px;
+    width: 95%;
+    outline: none;
+    /* border: none; */
+}
+
+.state-user p {
+    /* background-color: rgb(74, 13, 171); */
+    font-size: 18px;
+    margin-block: 6px;
+    padding-left: 5px;
+    width: 95%;
+}
+
+/* ==================================================================== */
+.city-user {
+    /* background-color: rgb(225, 255, 236); */
+    width: 48%;
+}
+
+.city-user label {
+    /* background-color: rgb(255, 106, 0); */
+    font-size: 18px;
+}
+
+.city-user select {
+    /* background-color: rgb(0, 255, 136); */
+    font-size: 16px;
+    padding: 6px;
+    margin-block-end: 5px;
+    width: 95%;
+    outline: none;
+    /* border: none; */
+}
+
+.city-user p {
+    /* background-color: rgb(74, 13, 171); */
+    font-size: 18px;
+    margin-block: 6px;
+    padding-left: 5px;
+    width: 65%;
+}
+
+/* ==================================================================== */
+.deshboard-flex {
+    /* background-color: red; */
+    display: flex;
+}
+
+/* ==================================================================== */
+.monthly-user-data {
+    /* background-color: greenyellow; */
+}
+
+.monthly-user-data h2 {
+    /* background-color: greenyellow; */
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.monthly-user-data img {
+    width: 100%;
+}
+
+/* ==================================================================== */
+
+.card-section {
+    /* background-color: greenyellow; */
+    border-radius: 10px;
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card-items {
+    background-color: rgb(251, 249, 246);
+    box-shadow: 0px 0px 3px 2px rgb(221, 219, 219);
+    border-radius: 10px;
+    padding: 10px;
+    width: 30%;
+    height: 100px;
+}
+
+.card-items p {
+    /* background-color: rgb(204, 163, 86); */
+    padding: 3px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width:960px) {
+    .deshboard-flex {
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ----------- */
+    .card-items {
+        width: 30%;
+        height: 90px;
+    }
+
+    .card-items p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:710px) {
+    .card-section {
+        /* background-color: greenyellow; */
+        border-radius: 10px;
+        width: 99%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .card-items {
+        width: 46%;
+        height: 80px;
+    }
+
+    .card-items p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:540px) {
+    .user-state-city-section {
+        background-color: rgb(246, 255, 255);
+        box-shadow: 0px 0px 3px 2px rgb(224, 218, 218);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* align-items: center; */
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .monthly-user-data h2 {
+        /* background-color: greenyellow; */
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .state-user {
+        /* background-color: rgb(255, 106, 0); */
+        width: 95%;
+    }
+
+    .city-user {
+        /* background-color: rgb(225, 255, 236); */
+        width: 95%;
+    }
+
+    .card-items {
+        width: 43%;
+        height: 70px;
+    }
+
+    .card-items p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:440px) {
+    .deshboard-main {
+        /* background-color: aqua; */
+        background-color: var(--white-color);
+        border-radius: 10px;
+        box-shadow: 0px 0px 3px 2px rgb(224, 218, 218);
+        padding: 15px 10px;
+    }
+
+    .deshboard-main h1 {
+        /* background-color: rgb(173, 231, 141); */
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .deshbord-overview-icon-size-color {
+        color: var(--patent-color);
+        font-size: 22px;
+    }
+
+    .card-section {
+        /* background-color: greenyellow; */
+        border-radius: 10px;
+        width: 100%;
+        padding: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .card-items {
+        width: 43%;
+        height: 70px;
+    }
+
+    .card-items p {
+        font-size: 12px;
+    }
+}
